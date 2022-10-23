@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    background: linear-gradient(90deg, #2f0d6d 10%, #480048 90%) no-repeat;
+    overflow-y: hidden;
+}
+
+.night{
+    width: 70vw;
+    height: 80vh;
+    border: 1px solid rgba(25, 2, 24, 0.884);
+    margin: 5rem auto;
+    background: url(../img/Img_1.png) no-repeat;
+    background-size:cover;
+    position: relative;
+    box-shadow: 1px 2px 60px rgba(25, 2, 24, 0.884);
+    overflow-x: hidden;
+}
+
+.palms{
+    height: 140px;
+    width: 500%;
+    background: url(../img/Img_02.png);
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-repeat: repeat-x;
+    animation: moveRight 6s linear infinite;
+}
+
+.car{
+    position: absolute;
+    bottom: 7%;
+    left: 24%;
+    animation: suspension 1s linear infinite;
+}
+
+@keyframes moveRight{
+    100%{transform:translateX(-2950px);}
+}
+
+@keyframes suspension{
+    100%{transform:translateY(-1px);}
+    50%{transform:translateY(2px);}
+    0%{transform:translateY(-1px);}
+}
